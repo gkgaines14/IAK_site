@@ -1,0 +1,148 @@
+.container {
+  max-width: $website-width;
+  // width: 90%;
+  margin: auto;
+  overflow: hidden;
+  // padding: 0 2rem;
+  // background: red;
+}
+
+.section {
+  width: 100%;
+  margin: 5rem 0 1rem 0;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+.px-1 {
+  padding: 0 1rem;
+}
+
+.heading {
+  font-size: 2.6rem;
+  letter-spacing: 4px;
+  color: var(--color-dark);
+}
+
+.center-middle {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  // padding: 0.5rem;
+  color: var(--color-dark);
+}
+
+.sub-label {
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+%btn-all {
+  width: 180px;
+  height: 45px;
+  padding: 0.4rem 0;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn {
+  &-light {
+    @extend %btn-all;
+    background-color: #9f0498;
+    color: white;
+
+    &:hover {
+      background-color: #7a229c;
+      // color: #9f0498;
+      box-shadow: 0 0 12px 2px hsla(292, 89%, 17%, 0.691);
+    }
+  }
+  &-dark {
+    @extend %btn-all;
+    background-color: #5d21a1;
+    color: white;
+
+    &:hover {
+      background-color: #9f0498;
+      box-shadow: 0 0 10px 1px hsla(268, 66%, 38%, 0.904);
+    }
+  }
+}
+
+.bar {
+  width: 15%;
+  margin: auto;
+  border-top: 3px solid var(--color-primary);
+  padding-bottom: 2rem;
+}
+
+.invisible {
+  display: none;
+}
+
+// Text modifiers
+.text-dark {
+  color: #333;
+}
+.text-white {
+  color: white;
+}
+
+.heavy {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.highlight {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-style: italic;
+}
+
+//Font classes
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Vujahday Script', cursive;
+// font-family: 'Calligraffitti', cursive;
+// font-family: 'Oooh Baby', cursive;
+// font-family: 'Italianno', cursive;
+// font-family: 'Nothing You Could Do', cursive;
+// font-family: 'Zeyada', cursive;
+// font-family: 'Mrs Saint Delafield', cursive;
+// font-family: 'Grey Qo', cursive;
